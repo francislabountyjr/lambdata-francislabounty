@@ -1,0 +1,2 @@
+pypi: https://test.pypi.org/project/lambdata-francislabounty/0.0.1/
+github: https://github.com/francislabountyjr/lambdata-francislabounty

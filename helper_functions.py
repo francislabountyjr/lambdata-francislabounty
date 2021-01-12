@@ -1,9 +1,15 @@
 import pandas as pd
 import numpy as np
 
-def null_count(df):
-    return df.isna().sum()
+class DfHelper(self, df):
+    """
+    A class that contains various pandas dataframe helper functions
+    """
+    self.df = df
 
-def randomize(df, seed):
-    df = df.apply(np.random(seed=seed).permutation, axis=0)
-    return df.apply(np.random(seed=seed).permutation, axis=1)
+    def null_count(self):
+        return self.df.isna().sum()
+
+    def randomize(self, seed):
+        self.df = self.df.apply(np.random(seed=seed).permutation, axis=0)
+        return self.df.apply(np.random(seed=seed).permutation, axis=1)
